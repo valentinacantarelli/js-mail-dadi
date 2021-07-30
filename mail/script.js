@@ -6,8 +6,16 @@ var mailRegistrate = [" scrappy@email.com "," juno@email.com "," ruffley@email.c
 
 var mail = prompt("Ciao, inserisci la tua mail!");
 
-for (var i = 0; i < mailRegistrate.length;i++){
+var verifica;
+
+for (var i = 0; i < mailRegistrate.length; i++){
     if (mail == mailRegistrate[i]){
-        alert("La tua mail è valida");}
-    
+        verifica = true;
+    }
+}
+
+if (verifica == true ){
+    alert("Sei registrato!");
+} else{
+    alert("Non sei registrato!");
 }
