@@ -2,11 +2,11 @@
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
 
-var mailRegistrate = [" scrappy@email.com "," juno@email.com "," ruffley@email.com "," mittens@email.com "];
+var mailRegistrate = ["scrappy@email.com","juno@email.com","ruffley@email.com","mittens@email.com"];
 
 var mail = prompt("Ciao, inserisci la tua mail!");
 
-var verifica;
+var verifica = false;
 
 for (var i = 0; i < mailRegistrate.length; i++){
     if (mail == mailRegistrate[i]){
